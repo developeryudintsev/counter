@@ -10,9 +10,11 @@ type valueType = {
 }
 
 export const TV = (props: valueType) => {
-    return (
+    // debugger
+      return (
            <div className={`${styles.tvStyle} ${props.incValue == props.max ? styles.red : ''}`}>
                {props.start<0 ? 'I have problem': props.value}
+               {console.log('incValue:  '+props.incValue)}
            </div>
 
     )
